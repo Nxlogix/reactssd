@@ -41,7 +41,6 @@ const UserForm = ({ fetchUsers, selectedUser }) => {
       setForm({ name: "", email: "", password: "" });
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
-      alert("Ocurrió un error. Inténtalo nuevamente.");
     }
   };
 
@@ -76,7 +75,7 @@ const UserForm = ({ fetchUsers, selectedUser }) => {
         )}
         <button type="submit">{selectedUser ? "Actualizar" : "Crear"}</button>
         <button
-          type="button" // ✅ Esto evita que el botón intente enviar el formulario
+          type="button"
           onClick={() => navigate("/login")}
           style={{
             marginTop: "1rem",
