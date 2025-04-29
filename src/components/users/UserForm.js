@@ -76,22 +76,22 @@ const UserForm = ({ fetchUsers, selectedUser }) => {
         )}
         <button type="submit">{selectedUser ? "Actualizar" : "Crear"}</button>
         <button
-        onClick={() => navigate("/login")}
-        style={{
-          marginTop: "1rem",
-          padding: "0.8rem",
-          backgroundColor: "#007bff",
-          color: "white",
-          border: "none",
-          borderRadius: "4px",
-          cursor: "pointer",
-          fontWeight: "bold",
-        }}
-      >
-        Regresar al Login
-      </button>
+          type="button" // ✅ Esto evita que el botón intente enviar el formulario
+          onClick={() => navigate("/login")}
+          style={{
+            marginTop: "1rem",
+            padding: "0.8rem",
+            backgroundColor: "#007bff",
+            color: "white",
+            border: "none",
+            borderRadius: "4px",
+            cursor: "pointer",
+            fontWeight: "bold",
+          }}
+        >
+          Regresar al Login
+        </button>
       </form>
-
     </div>
   );
 };
