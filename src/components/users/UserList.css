@@ -1,0 +1,112 @@
+/* UserList.css */
+.userlist-container {
+  padding: 1.5rem;
+  min-height: auto;
+  background-color: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userlist-container h2 {
+  font-size: 2rem;
+  color: #2f3640;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.userlist-list {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+
+.userlist-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.userlist-list li {
+  display: flex;
+  flex-direction: column;
+  background: #ecf0f1;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.userlist-list li:hover {
+  background: #dcdde1;
+}
+
+.userlist-buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.userlist-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.userlist-buttons button:first-child {
+  background-color: #00a8ff;
+  color: #fff;
+}
+
+.userlist-buttons button:first-child:hover {
+  background-color: #0097e6;
+}
+
+.userlist-buttons button:last-child {
+  background-color: #e84118;
+  color: #fff;
+}
+
+.userlist-buttons button:last-child:hover {
+  background-color: #c23616;
+}
+
+/* Responsivo */
+
+/* Móviles */
+@media (max-width: 600px) {
+  .userlist-list {
+    padding: 1rem;
+  }
+  .userlist-list li {
+    padding: 0.75rem;
+  }
+  .userlist-buttons {
+    flex-direction: column;
+  }
+  .userlist-buttons button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
+
+/* Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .userlist-list {
+    max-width: 700px;
+  }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1400px) {
+  .userlist-list {
+    max-width: 1100px;
+  }
+}

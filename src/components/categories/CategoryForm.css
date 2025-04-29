@@ -1,0 +1,103 @@
+/* CategoryForm.css */
+.category-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    background-color: #f5f6fa;
+    padding: 1.5rem;
+  }
+  
+  .category-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .category-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2f3640;
+    font-size: 2rem;
+  }
+  
+  .category-form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .category-form input:focus {
+    outline: none;
+    border-color: #4cd137;
+  }
+  
+  .category-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #44bd32;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .category-form button:hover {
+    background-color: #4cd137;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsivo */
+  
+  /* Móviles */
+  @media (max-width: 600px) {
+    .category-form {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+  
+    .category-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .category-form input,
+    .category-form button {
+      font-size: 0.95rem;
+      padding: 0.8rem;
+    }
+  }
+  
+  /* Tabletas */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .category-form {
+      max-width: 500px;
+    }
+  }
+  
+  /* Pantallas muy grandes */
+  @media (min-width: 1400px) {
+    .category-form {
+      max-width: 700px;
+      padding: 2.5rem;
+    }
+  
+    .category-form h2 {
+      font-size: 2.5rem;
+    }
+  
+    .category-form input,
+    .category-form button {
+      font-size: 1.1rem;
+    }
+  }
+  

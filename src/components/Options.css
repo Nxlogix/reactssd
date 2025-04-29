@@ -1,0 +1,86 @@
+/* src/style/options.css */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 1rem;
+  }
+  
+  .options-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2f3640;
+    text-align: center;
+  }
+  
+  .options-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .options-buttons button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #273c75;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .options-buttons button:hover {
+    background-color: #40739e;
+    transform: translateY(-2px); /* pequeño efecto flotante */
+  }
+  
+  /* Responsivo para móviles */
+  @media (max-width: 600px) {
+    .options-container {
+      padding: 1rem;
+    }
+  
+    .options-buttons {
+      max-width: 90%;
+    }
+  
+    .options-buttons button {
+      font-size: 0.95rem;
+      padding: 0.65rem;
+    }
+  }
+  
+  /* Responsivo para tabletas */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .options-buttons {
+      max-width: 400px;
+    }
+  
+    .options-buttons button {
+      font-size: 1.1rem;
+      padding: 0.8rem;
+    }
+  }
+  
+  /* Responsivo para pantallas muy grandes */
+  @media (min-width: 1400px) {
+    .options-container h2 {
+      font-size: 2.5rem;
+    }
+  
+    .options-buttons {
+      max-width: 500px;
+    }
+  
+    .options-buttons button {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+  }
+  
