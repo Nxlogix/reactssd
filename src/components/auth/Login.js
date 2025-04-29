@@ -1,26 +1,26 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Importar useNavigate
+import { useNavigate } from "react-router-dom"; 
 import { loginUser } from "../../services/api";
-import "./Login.css"; // Ruta ajustada
+import "./Login.css"; 
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
-  const navigate = useNavigate(); // Hook para manejar la navegación
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await loginUser(form);
       const { access_token } = response.data;
-      localStorage.setItem("token", access_token); // Guardar el token en localStorage
+      localStorage.setItem("token", access_token); 
       alert("Login exitoso");
-      navigate("/options"); // Navegar a la página de opciones
+      navigate("/options"); 
     } catch (error) {
       setError("Credenciales inválidas");
     }
@@ -51,7 +51,7 @@ const Login = () => {
           Entrar
         </button>
         <button
-          onClick={() => navigate("/users/form")} // Botón para navegar al formulario de usuarios
+          onClick={() => navigate("/users/form")} 
           style={styles.buttonAlt}
         >
           Ir al Formulario de Usuario

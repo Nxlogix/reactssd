@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Importa useNavigate
+import { useNavigate } from "react-router-dom";
 import { getUsers, deleteUser } from "../../services/api";
 import UserForm from "./UserForm";
 import "../users/UserList.css";
@@ -7,7 +7,7 @@ import "../users/UserList.css";
 const UsersList = () => {
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null); 
-  const navigate = useNavigate(); // Hook para la navegación
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     fetchUsers();
@@ -50,7 +50,6 @@ const UsersList = () => {
         </ul>
       </div>
 
-      {/* Botón para regresar a opciones */}
       <button
         onClick={() => navigate("/options")}
         style={{

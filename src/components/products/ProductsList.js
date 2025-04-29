@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Importa useNavigate
+import { useNavigate } from "react-router-dom"; 
 import { getProducts, deleteProduct, updateProduct } from "../../services/api";
 import "../products/Product.css";
 
@@ -12,7 +12,7 @@ const ProductsList = () => {
     stock: "",
   });
 
-  const navigate = useNavigate(); // Hook para la navegación
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     fetchProducts();
@@ -98,7 +98,6 @@ const ProductsList = () => {
         </div>
       )}
 
-      {/* Botón para regresar a opciones */}
       <button
         onClick={() => navigate("/options")}
         style={{

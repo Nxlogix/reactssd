@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Importa useNavigate
+import { useNavigate } from "react-router-dom";
 import { createCategory } from "../../services/api";
 import "../categories/CategoryForm.css";
 
@@ -9,7 +9,7 @@ const CategoryForm = ({ fetchCategories }) => {
     description: "",
   });
 
-  const navigate = useNavigate(); // Hook para manejar la navegación
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -58,7 +58,7 @@ const CategoryForm = ({ fetchCategories }) => {
           required
         />
         <button type="submit">Crear</button>
-        {/* Botón para regresar a opciones */}
+        
       <button
         onClick={() => navigate("/options")}
         style={{

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Importar useNavigate
+import { useNavigate } from "react-router-dom";
 import { createUser, updateUser } from "../../services/api";
 import "../auth/Login.css";
 
@@ -10,7 +10,7 @@ const UserForm = ({ fetchUsers, selectedUser }) => {
     password: "",
   });
 
-  const navigate = useNavigate(); // Hook para manejar la navegación
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (selectedUser) {

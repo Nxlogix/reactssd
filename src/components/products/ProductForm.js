@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Importar useNavigate
+import { useNavigate } from "react-router-dom";
 import { createProduct } from "../../services/api";
 import "../products/Product.css";
 
@@ -11,7 +11,7 @@ const ProductForm = ({ fetchProducts }) => {
     category_id: "",
   });
 
-  const navigate = useNavigate(); // Hook para manejar la navegación
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -77,7 +77,7 @@ const ProductForm = ({ fetchProducts }) => {
           required
         />
         <button type="submit">Crear Producto</button>
-        {/* Botón para regresar a opciones */}
+        
       <button
         onClick={() => navigate("/options")}
         style={{

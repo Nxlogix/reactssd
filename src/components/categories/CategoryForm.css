@@ -1,4 +1,3 @@
-/* CategoryForm.css */
 .category-form-container {
     display: flex;
     justify-content: center;
@@ -57,9 +56,7 @@
     transform: translateY(-2px);
   }
   
-  /* Responsivo */
   
-  /* Móviles */
   @media (max-width: 600px) {
     .category-form {
       padding: 1.5rem;
@@ -77,14 +74,14 @@
     }
   }
   
-  /* Tabletas */
+  
   @media (min-width: 601px) and (max-width: 1024px) {
     .category-form {
       max-width: 500px;
     }
   }
   
-  /* Pantallas muy grandes */
+  
   @media (min-width: 1400px) {
     .category-form {
       max-width: 700px;

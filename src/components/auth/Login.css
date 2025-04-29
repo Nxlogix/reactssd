@@ -1,20 +1,19 @@
-/* login.css */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: auto; /* No ocupa toda la pantalla */
+  min-height: auto; 
   background-color: #f5f6fa;
   padding: 1rem;
 }
 
 .login-form {
   background: #ffffff;
-  padding: 1.5rem;     /* Mismo espacio interior que antes */
+  padding: 1.5rem;     
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   width: 100%;
-  max-width: 600px;     /* Aumentado de 400px a 600px */
+  max-width: 600px; 
 }
 
 .login-form h2 {
@@ -64,9 +63,7 @@
   font-weight: bold;
 }
 
-/* Responsivo */
 
-/* Móviles */
 @media (max-width: 600px) {
   .login-form {
     max-width: 90%;
@@ -82,7 +79,6 @@
   }
 }
 
-/* Tabletas */
 @media (min-width: 601px) and (max-width: 1024px) {
   .login-form {
     max-width: 500px;
@@ -93,7 +89,6 @@
   }
 }
 
-/* Pantallas muy grandes */
 @media (min-width: 1400px) {
   .login-form {
     max-width: 700px;
